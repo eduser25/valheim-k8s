@@ -30,6 +30,8 @@ spec:
           value: {{ .Values.serverName }}
         - name: WORLD_NAME
           value: {{ .Values.worldName }}
+        - name: PUBLIC_TEST
+          value: {{ .Values.publicTest }}
         {{ if .Values.passwordSecret -}}
         - name: SERVER_PASS
           valueFrom:

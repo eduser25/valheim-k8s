@@ -1,7 +1,7 @@
 worldName: example-world-name
 serverName: example-server-name
 password: password
-publicTest: false
+publicTest: "false"
 
 resources: {}
 

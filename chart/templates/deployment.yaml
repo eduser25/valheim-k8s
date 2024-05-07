@@ -26,6 +26,8 @@ spec:
       - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         name: {{ .Release.Name }}
         env:
+        - name: ADMINLIST_IDS
+          value: "76561197991324757"
         - name: SERVER_NAME
           value: {{ .Values.serverName }}
         - name: WORLD_NAME
